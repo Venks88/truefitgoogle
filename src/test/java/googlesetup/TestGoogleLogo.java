@@ -42,6 +42,7 @@ public class TestGoogleLogo extends TestListenerAdapter {
             WebElement imgSource = ocObject.driver.findElement(By.xpath("//img[@id='hplogo']"));
             String tagType = ocObject.driver.findElementById("hplogo").getTagName();
             String src = imgSource.getAttribute("src");
+            Assert.assertTrue(imgSource.isDisplayed(), "Google Logo is displayed");
             Assert.assertTrue(tagType.equals("img"), "The returned web element is not an image");
             Assert.assertTrue(src.equals("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"),
                     "The returned image source is incorrect");

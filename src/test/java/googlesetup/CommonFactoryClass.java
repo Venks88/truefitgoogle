@@ -14,7 +14,6 @@ public class CommonFactoryClass {
 
     StringPlaceHolderClass spcObject = new StringPlaceHolderClass();
 
-
     public HttpURLConnection responseData() throws IOException {
         URL url = new URL(spcObject.sourceUrl);
         HttpURLConnection connection = (HttpURLConnection)url.openConnection();
