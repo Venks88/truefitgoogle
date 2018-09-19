@@ -1,17 +1,14 @@
 package googlesetup;
 
-import org.codehaus.plexus.util.FileUtils;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 import org.testng.annotations.*;
 
-import java.io.File;
-import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.util.Random;
+
+//@Listeners({googlesetup.OpenChrome.class})
 
 public class OpenChrome extends TestListenerAdapter {
 
