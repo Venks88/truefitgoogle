@@ -1,0 +1,20 @@
+<suite name="Suite-Listeners" parallel="none">
+
+    <listeners>
+
+        <listener class-name="googlesetup.TestGoogleLogo"></listener>
+
+    </listeners>
+
+    <test name="Batch-Listeners">
+
+        <classes>
+
+            <class name="googlesetup.TestGoogleLogo" />
+            <class name="googlesetup.OpenChrome" />
+
+        </classes>
+
+    </test>
+
+</suite>

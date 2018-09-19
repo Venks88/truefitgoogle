@@ -21,28 +21,21 @@ public class OpenChrome extends TestListenerAdapter {
     //private class variables:
     public ChromeDriver driver = new ChromeDriver();
 
-    @BeforeMethod
-    public void beforeMethod() {
-        System.out.println("@BeforeMethod has been executed");
+    @BeforeTest
+    public void testSetup() {
+        System.out.println("@BeforeTest has been executed");
         System.setProperty("webdriver.chrome.driver","chromedriver");
     }
 
-    //The after method also serves as a tear down
-    @AfterMethod
-    public void afterMethod(ITestResult result) throws IOException {
-        System.out.println("@AfterMethod has been executed");
-        if (result.getStatus() == ITestResult.FAILURE) {
-            System.out.println("A Test failure has occured, a screenshot has been taken");
-            Random rand = new Random();
-            File file = driver.getScreenshotAs(OutputType.FILE);
-            try {
-                FileUtils.copyFile(file, new File("/Users/venkata.narasimhan/Documents/truefitrepo/truefitgoogle/screenshots/"+result.getName()+".png"));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            System.out.println(file.getAbsolutePath());
-        }
+    @AfterTest
+    public void testTearDown() {
+        System.out.println("@AfterTest has been executed");
         driver.close();
+    }
+
+    @Override
+    public void onTestFailure(ITestResult result) {
+        cfcObject.screenShotMechanismOnFailure(result);
     }
 
     @Test
