@@ -4,9 +4,7 @@ import cucumber.annotation.en.And;
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
-import cucumber.runtime.PendingException;
 import org.junit.runner.Description;
-import org.junit.runner.RunWith;
 import org.junit.runner.Runner;
 import org.junit.runner.notification.RunNotifier;
 import org.openqa.selenium.WebElement;
@@ -16,11 +14,11 @@ import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
 
-public class googleTextFieldStepdefs extends Runner {
+public class googleTextFieldSteps_BDD extends Runner {
 
     private StringPlaceHolderClass sphObject = new StringPlaceHolderClass();
     private CommonFactoryClass cfcObject = new CommonFactoryClass();
-    private OpenChrome ocObject = new OpenChrome();
+    private TestGoogleHomePageOpening ocObject = new TestGoogleHomePageOpening();
 
     @BeforeTest
     public void testSetup() {

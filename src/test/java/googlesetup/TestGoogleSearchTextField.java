@@ -1,6 +1,5 @@
 package googlesetup;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -11,13 +10,13 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-//@Listeners({googlesetup.TestSearchTextField.class})
+//@Listeners({googlesetup.TestGoogleSearchTextField.class})
 
-public class TestSearchTextField extends TestListenerAdapter {
+public class TestGoogleSearchTextField extends TestListenerAdapter {
 
     private StringPlaceHolderClass sphObject = new StringPlaceHolderClass();
     private CommonFactoryClass cfcObject = new CommonFactoryClass();
-    private OpenChrome ocObject = new OpenChrome();
+    private TestGoogleHomePageOpening ocObject = new TestGoogleHomePageOpening();
 
     @BeforeTest
     public void testSetup() {

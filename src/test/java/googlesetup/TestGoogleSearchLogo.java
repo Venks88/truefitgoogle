@@ -10,13 +10,13 @@ import org.testng.annotations.*;
 
 import java.io.IOException;
 
-//@Listeners({googlesetup.TestGoogleLogo.class})
+//@Listeners({googlesetup.TestGoogleSearchLogo.class})
 
-public class TestGoogleLogo extends TestListenerAdapter {
+public class TestGoogleSearchLogo extends TestListenerAdapter {
 
     private StringPlaceHolderClass sphObject = new StringPlaceHolderClass();
     private CommonFactoryClass cfcObject = new CommonFactoryClass();
-    private OpenChrome ocObject = new OpenChrome();
+    private TestGoogleHomePageOpening ocObject = new TestGoogleHomePageOpening();
 
     @BeforeTest
     public void testSetup() {

@@ -8,9 +8,9 @@ import org.testng.annotations.*;
 
 import java.net.HttpURLConnection;
 
-//@Listeners({googlesetup.OpenChrome.class})
+//@Listeners({googlesetup.TestGoogleHomePageOpening.class})
 
-public class OpenChrome extends TestListenerAdapter {
+public class TestGoogleHomePageOpening extends TestListenerAdapter {
 
     private StringPlaceHolderClass sphObject = new StringPlaceHolderClass();
     private CommonFactoryClass cfcObject = new CommonFactoryClass();

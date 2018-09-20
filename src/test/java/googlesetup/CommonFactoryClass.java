@@ -24,9 +24,8 @@ public class CommonFactoryClass {
 
     public void screenShotMechanismOnFailure(ITestResult result){
         if (result.getStatus() == ITestResult.FAILURE) {
-            OpenChrome ocObject = new OpenChrome();
+            TestGoogleHomePageOpening ocObject = new TestGoogleHomePageOpening();
             System.out.println("A Test failure has occured, a screenshot has been taken");
-            Random rand = new Random();
             File file = ocObject.driver.getScreenshotAs(OutputType.FILE);
             try {
                 FileUtils.copyFile(file, new File("/Users/venkata.narasimhan/Documents/truefitrepo/truefitgoogle/screenshots/" + result.getName() + ".png"));
