@@ -1,5 +1,7 @@
 package googlesetup;
 
+import commonfactory.CommonFactoryClass;
+import commonfactory.StringPlaceHolderClass;
 import cucumber.annotation.en.And;
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;

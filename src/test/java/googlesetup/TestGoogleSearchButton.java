@@ -1,5 +1,7 @@
 package googlesetup;
 
+import commonfactory.CommonFactoryClass;
+import commonfactory.StringPlaceHolderClass;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -159,7 +161,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
         Assert.assertTrue(textFieldSrc.isDisplayed(), "Text field is available on the redirected page");
         Assert.assertTrue(textFieldSrc.isEnabled(), "Text field is NOT enabled");
         ocObject.driver.navigate().back();
-        WebElement imgSource = ocObject.driver.findElement(By.xpath("//img[@id='hplogo']"));
+        WebElement imgSource = ocObject.driver.findElement(By.id("hplogo"));
         Assert.assertTrue(imgSource.isDisplayed(), "Google Logo is displayed");
     }
 

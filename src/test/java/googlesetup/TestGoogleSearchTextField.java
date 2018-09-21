@@ -1,5 +1,7 @@
 package googlesetup;
 
+import commonfactory.CommonFactoryClass;
+import commonfactory.StringPlaceHolderClass;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestResult;
