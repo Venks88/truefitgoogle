@@ -14,6 +14,9 @@ https://www.seleniumhq.org/download/
 From -> https://chromedriver.storage.googleapis.com/2.42/chromedriver_mac64.zip, 
 https://chromedriver.storage.googleapis.com/index.html?path=2.42/
 
+- geckodriver-v0.22.0-macos.tar.gz
+From -> https://github.com/mozilla/geckodriver/releases
+
 - selenium-java-3.14.0.zip
 From -> https://selenium-release.storage.googleapis.com/3.14/selenium-java-3.14.0.zip, 
 https://www.seleniumhq.org/download/
