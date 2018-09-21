@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  truefitgoogle</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>truefitgoogle</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 21 13:30:28 EDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>84 seconds (84948 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='googlesetup.TestGoogleHomePageOpeningChrome.checkForPageExistence()'><b>checkForPageExistence</b><br>Test class: googlesetup.TestGoogleHomePageOpeningChrome</td>
+<td></td>
+<td>3</td>
+<td>[TestGoogleHomePageOpening passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchButton.test_LookForLuckSearchButton()'><b>test_LookForLuckSearchButton</b><br>Test class: googlesetup.TestGoogleSearchButton</td>
+<td></td>
+<td>2</td>
+<td>[TestGoogleSearchButton passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchButton.test_LookForSearchButton()'><b>test_LookForSearchButton</b><br>Test class: googlesetup.TestGoogleSearchButton</td>
+<td></td>
+<td>0</td>
+<td>[TestGoogleSearchButton passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchButton.test_SearchButtonWithEmptyTextFailTest()'><b>test_SearchButtonWithEmptyTextFailTest</b><br>Test class: googlesetup.TestGoogleSearchButton</td>
+<td></td>
+<td>0</td>
+<td>[TestGoogleSearchButton passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchButton.test_SearchButtonWithNoText()'><b>test_SearchButtonWithNoText</b><br>Test class: googlesetup.TestGoogleSearchButton</td>
+<td></td>
+<td>0</td>
+<td>[TestGoogleSearchButton passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchButton.test_SearchButtonWithNumbers()'><b>test_SearchButtonWithNumbers</b><br>Test class: googlesetup.TestGoogleSearchButton</td>
+<td></td>
+<td>10</td>
+<td>[TestGoogleSearchButton passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchButton.test_SearchButtonWithSpecialChars()'><b>test_SearchButtonWithSpecialChars</b><br>Test class: googlesetup.TestGoogleSearchButton</td>
+<td></td>
+<td>13</td>
+<td>[TestGoogleSearchButton passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchButton.test_SearchButtonWithText()'><b>test_SearchButtonWithText</b><br>Test class: googlesetup.TestGoogleSearchButton</td>
+<td></td>
+<td>1</td>
+<td>[TestGoogleSearchButton passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchButton.test_SearchButtonWithTextAndRedirect()'><b>test_SearchButtonWithTextAndRedirect</b><br>Test class: googlesetup.TestGoogleSearchButton</td>
+<td></td>
+<td>1</td>
+<td>[TestGoogleSearchButton passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchButton.test_SearchButtonWithTextJSONResponse()'><b>test_SearchButtonWithTextJSONResponse</b><br>Test class: googlesetup.TestGoogleSearchButton</td>
+<td></td>
+<td>0</td>
+<td>[TestGoogleSearchButton passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchTextField.test_checkForExistenceOfInputsInTextField_JSInjection()'><b>test_checkForExistenceOfInputsInTextField_JSInjection</b><br>Test class: googlesetup.TestGoogleSearchTextField</td>
+<td></td>
+<td>9</td>
+<td>[TestGoogleSearchTextField passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchTextField.test_checkForExistenceOfInputsInTextField_SQLInjection()'><b>test_checkForExistenceOfInputsInTextField_SQLInjection</b><br>Test class: googlesetup.TestGoogleSearchTextField</td>
+<td></td>
+<td>5</td>
+<td>[TestGoogleSearchTextField passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchTextField.test_checkForExistenceOfInputsInTextField_blankSpaces()'><b>test_checkForExistenceOfInputsInTextField_blankSpaces</b><br>Test class: googlesetup.TestGoogleSearchTextField</td>
+<td></td>
+<td>5</td>
+<td>[TestGoogleSearchTextField passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchTextField.test_checkForExistenceOfInputsInTextField_specialChars_ASCII()'><b>test_checkForExistenceOfInputsInTextField_specialChars_ASCII</b><br>Test class: googlesetup.TestGoogleSearchTextField</td>
+<td></td>
+<td>5</td>
+<td>[TestGoogleSearchTextField passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchTextField.test_checkForExistenceOfInputsInTextField_specialChars_UTF8()'><b>test_checkForExistenceOfInputsInTextField_specialChars_UTF8</b><br>Test class: googlesetup.TestGoogleSearchTextField</td>
+<td></td>
+<td>5</td>
+<td>[TestGoogleSearchTextField passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchTextField.test_checkForExistenceOfInputsInTextField_specialChars_Unicode()'><b>test_checkForExistenceOfInputsInTextField_specialChars_Unicode</b><br>Test class: googlesetup.TestGoogleSearchTextField</td>
+<td></td>
+<td>5</td>
+<td>[TestGoogleSearchTextField passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchTextField.test_checkForExistenceOfInputsInTextField_valid()'><b>test_checkForExistenceOfInputsInTextField_valid</b><br>Test class: googlesetup.TestGoogleSearchTextField</td>
+<td></td>
+<td>5</td>
+<td>[TestGoogleSearchTextField passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchTextField.test_checkForExistenceOfTextField()'><b>test_checkForExistenceOfTextField</b><br>Test class: googlesetup.TestGoogleSearchTextField</td>
+<td></td>
+<td>5</td>
+<td>[TestGoogleSearchTextField passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchLogo.test_checkForGoogleLogo_Existence()'><b>test_checkForGoogleLogo_Existence</b><br>Test class: googlesetup.TestGoogleSearchLogo</td>
+<td></td>
+<td>0</td>
+<td>[TestGoogleSearchLogo passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchLogo.test_checkForLogoAlignment()'><b>test_checkForLogoAlignment</b><br>Test class: googlesetup.TestGoogleSearchLogo</td>
+<td></td>
+<td>0</td>
+<td>[TestGoogleSearchLogo passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='googlesetup.TestGoogleSearchLogo.test_checkForLogoCSSProperties()'><b>test_checkForLogoCSSProperties</b><br>Test class: googlesetup.TestGoogleSearchLogo</td>
+<td></td>
+<td>0</td>
+<td>[TestGoogleSearchLogo passed=0 failed=0 skipped=0]</td></tr>
+</table><p>
+</body>
+</html>

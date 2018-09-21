@@ -2,7 +2,8 @@
 
     <listeners>
 
-        <listener class-name="googlesetup.TestGoogleSearchLogo"/>
+        <listener class-name="googlesetupChrome.TestGoogleSearchLogo"/>
+        <listener class-name="googlesetupFireFox.TestGoogleSearchLogo"/>
 
     </listeners>
 
@@ -10,10 +11,14 @@
 
         <classes>
 
-            <class name="googlesetup.TestGoogleSearchTextField" />
-            <class name="googlesetup.TestGoogleHomePageOpening" />
-            <class name="googlesetup.TestGoogleSearchLogo" />
-            <class name="googlesetup.TestGoogleSearchButton" />
+            <class name="googlesetupChrome.TestGoogleSearchTextField" />
+            <class name="googlesetupChrome.TestGoogleHomePageOpeningChrome" />
+            <class name="googlesetupChrome.TestGoogleSearchLogo" />
+            <class name="googlesetupChrome.TestGoogleSearchButton" />
+            <class name="googlesetupFireFox.TestGoogleSearchTextField" />
+            <class name="googlesetupFireFox.TestGoogleHomePageOpeningFirefox" />
+            <class name="googlesetupFireFox.TestGoogleSearchLogo" />
+            <class name="googlesetupFireFox.TestGoogleSearchButton" />
 
         </classes>
 

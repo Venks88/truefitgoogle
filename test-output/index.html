@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_Suite">
+              <span class="suite-name border-passed">Default Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_Suite">
+                    <span>temp-testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods passed suite-Default_Suite"> (hide)</a> <!-- hide-methods passed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods passed suite-Default_Suite"> (show)</a> <!-- show-methods passed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleHomePageOpeningChrome" hash-for-method="checkForPageExistence">checkForPageExistence</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchButton" hash-for-method="test_LookForLuckSearchButton">test_LookForLuckSearchButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchButton" hash-for-method="test_LookForSearchButton">test_LookForSearchButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchButton" hash-for-method="test_SearchButtonWithEmptyTextFailTest">test_SearchButtonWithEmptyTextFailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchButton" hash-for-method="test_SearchButtonWithNoText">test_SearchButtonWithNoText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchButton" hash-for-method="test_SearchButtonWithNumbers">test_SearchButtonWithNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchButton" hash-for-method="test_SearchButtonWithSpecialChars">test_SearchButtonWithSpecialChars</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchButton" hash-for-method="test_SearchButtonWithText">test_SearchButtonWithText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchButton" hash-for-method="test_SearchButtonWithTextAndRedirect">test_SearchButtonWithTextAndRedirect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchButton" hash-for-method="test_SearchButtonWithTextJSONResponse">test_SearchButtonWithTextJSONResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchTextField" hash-for-method="test_checkForExistenceOfInputsInTextField_JSInjection">test_checkForExistenceOfInputsInTextField_JSInjection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchTextField" hash-for-method="test_checkForExistenceOfInputsInTextField_SQLInjection">test_checkForExistenceOfInputsInTextField_SQLInjection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchTextField" hash-for-method="test_checkForExistenceOfInputsInTextField_blankSpaces">test_checkForExistenceOfInputsInTextField_blankSpaces</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchTextField" hash-for-method="test_checkForExistenceOfInputsInTextField_specialChars_ASCII">test_checkForExistenceOfInputsInTextField_specialChars_ASCII</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchTextField" hash-for-method="test_checkForExistenceOfInputsInTextField_specialChars_UTF8">test_checkForExistenceOfInputsInTextField_specialChars_UTF8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchTextField" hash-for-method="test_checkForExistenceOfInputsInTextField_specialChars_Unicode">test_checkForExistenceOfInputsInTextField_specialChars_Unicode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchTextField" hash-for-method="test_checkForExistenceOfInputsInTextField_valid">test_checkForExistenceOfInputsInTextField_valid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchTextField" hash-for-method="test_checkForExistenceOfTextField">test_checkForExistenceOfTextField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchLogo" hash-for-method="test_checkForGoogleLogo_Existence">test_checkForGoogleLogo_Existence</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchLogo" hash-for-method="test_checkForLogoAlignment">test_checkForLogoAlignment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="googlesetup.TestGoogleSearchLogo" hash-for-method="test_checkForLogoCSSProperties">test_checkForLogoCSSProperties</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">googlesetup.TestGoogleSearchTextField</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_checkForExistenceOfInputsInTextField_JSInjection">
+                  </a> <!-- test_checkForExistenceOfInputsInTextField_JSInjection -->
+                  <span class="method-name">test_checkForExistenceOfInputsInTextField_JSInjection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_checkForExistenceOfInputsInTextField_SQLInjection">
+                  </a> <!-- test_checkForExistenceOfInputsInTextField_SQLInjection -->
+                  <span class="method-name">test_checkForExistenceOfInputsInTextField_SQLInjection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_checkForExistenceOfInputsInTextField_blankSpaces">
+                  </a> <!-- test_checkForExistenceOfInputsInTextField_blankSpaces -->
+                  <span class="method-name">test_checkForExistenceOfInputsInTextField_blankSpaces</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_checkForExistenceOfInputsInTextField_specialChars_ASCII">
+                  </a> <!-- test_checkForExistenceOfInputsInTextField_specialChars_ASCII -->
+                  <span class="method-name">test_checkForExistenceOfInputsInTextField_specialChars_ASCII</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_checkForExistenceOfInputsInTextField_specialChars_UTF8">
+                  </a> <!-- test_checkForExistenceOfInputsInTextField_specialChars_UTF8 -->
+                  <span class="method-name">test_checkForExistenceOfInputsInTextField_specialChars_UTF8</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_checkForExistenceOfInputsInTextField_specialChars_Unicode">
+                  </a> <!-- test_checkForExistenceOfInputsInTextField_specialChars_Unicode -->
+                  <span class="method-name">test_checkForExistenceOfInputsInTextField_specialChars_Unicode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_checkForExistenceOfInputsInTextField_valid">
+                  </a> <!-- test_checkForExistenceOfInputsInTextField_valid -->
+                  <span class="method-name">test_checkForExistenceOfInputsInTextField_valid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_checkForExistenceOfTextField">
+                  </a> <!-- test_checkForExistenceOfTextField -->
+                  <span class="method-name">test_checkForExistenceOfTextField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">googlesetup.TestGoogleHomePageOpeningChrome</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkForPageExistence">
+                  </a> <!-- checkForPageExistence -->
+                  <span class="method-name">checkForPageExistence</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">googlesetup.TestGoogleSearchButton</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_LookForLuckSearchButton">
+                  </a> <!-- test_LookForLuckSearchButton -->
+                  <span class="method-name">test_LookForLuckSearchButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_LookForSearchButton">
+                  </a> <!-- test_LookForSearchButton -->
+                  <span class="method-name">test_LookForSearchButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SearchButtonWithEmptyTextFailTest">
+                  </a> <!-- test_SearchButtonWithEmptyTextFailTest -->
+                  <span class="method-name">test_SearchButtonWithEmptyTextFailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SearchButtonWithNoText">
+                  </a> <!-- test_SearchButtonWithNoText -->
+                  <span class="method-name">test_SearchButtonWithNoText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SearchButtonWithNumbers">
+                  </a> <!-- test_SearchButtonWithNumbers -->
+                  <span class="method-name">test_SearchButtonWithNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SearchButtonWithSpecialChars">
+                  </a> <!-- test_SearchButtonWithSpecialChars -->
+                  <span class="method-name">test_SearchButtonWithSpecialChars</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SearchButtonWithText">
+                  </a> <!-- test_SearchButtonWithText -->
+                  <span class="method-name">test_SearchButtonWithText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SearchButtonWithTextAndRedirect">
+                  </a> <!-- test_SearchButtonWithTextAndRedirect -->
+                  <span class="method-name">test_SearchButtonWithTextAndRedirect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SearchButtonWithTextJSONResponse">
+                  </a> <!-- test_SearchButtonWithTextJSONResponse -->
+                  <span class="method-name">test_SearchButtonWithTextJSONResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">googlesetup.TestGoogleSearchLogo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_checkForGoogleLogo_Existence">
+                  </a> <!-- test_checkForGoogleLogo_Existence -->
+                  <span class="method-name">test_checkForGoogleLogo_Existence</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_checkForLogoAlignment">
+                  </a> <!-- test_checkForLogoAlignment -->
+                  <span class="method-name">test_checkForLogoAlignment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_checkForLogoCSSProperties">
+                  </a> <!-- test_checkForLogoCSSProperties -->
+                  <span class="method-name">test_checkForLogoCSSProperties</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+        </div> <!-- panel Default_Suite -->
+        <div panel-name="test-xml-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/venkata.narasimhan/Library/Caches/IntelliJIdea2017.3/temp-testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default Suite&quot;&gt;
+  &lt;test name=&quot;truefitgoogle&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;googlesetup.googleTextFieldSearchNegativeSteps_BDD&quot;/&gt;
+      &lt;class name=&quot;googlesetup.googleTextFieldSearchSteps_BDD&quot;/&gt;
+      &lt;class name=&quot;googlesetup.googleTextFieldSteps_BDD&quot;/&gt;
+      &lt;class name=&quot;googlesetup.TestGoogleHomePageOpeningChrome&quot;/&gt;
+      &lt;class name=&quot;googlesetup.TestGoogleSearchButton&quot;/&gt;
+      &lt;class name=&quot;googlesetup.TestGoogleSearchLogo&quot;/&gt;
+      &lt;class name=&quot;googlesetup.TestGoogleSearchTextField&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- truefitgoogle --&gt;
+&lt;/suite&gt; &lt;!-- Default Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">truefitgoogle (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_Suite');
+function tableData_Default_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_SearchButtonWithSpecialChars')
+data.setCell(0, 2, 'googlesetup.TestGoogleSearchButton')
+data.setCell(0, 3, 13764);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_SearchButtonWithNumbers')
+data.setCell(1, 2, 'googlesetup.TestGoogleSearchButton')
+data.setCell(1, 3, 10174);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_checkForExistenceOfInputsInTextField_JSInjection')
+data.setCell(2, 2, 'googlesetup.TestGoogleSearchTextField')
+data.setCell(2, 3, 9211);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_checkForExistenceOfInputsInTextField_SQLInjection')
+data.setCell(3, 2, 'googlesetup.TestGoogleSearchTextField')
+data.setCell(3, 3, 5645);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_checkForExistenceOfInputsInTextField_blankSpaces')
+data.setCell(4, 2, 'googlesetup.TestGoogleSearchTextField')
+data.setCell(4, 3, 5608);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_checkForExistenceOfInputsInTextField_specialChars_ASCII')
+data.setCell(5, 2, 'googlesetup.TestGoogleSearchTextField')
+data.setCell(5, 3, 5483);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test_checkForExistenceOfInputsInTextField_specialChars_Unicode')
+data.setCell(6, 2, 'googlesetup.TestGoogleSearchTextField')
+data.setCell(6, 3, 5444);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test_checkForExistenceOfInputsInTextField_specialChars_UTF8')
+data.setCell(7, 2, 'googlesetup.TestGoogleSearchTextField')
+data.setCell(7, 3, 5411);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test_checkForExistenceOfTextField')
+data.setCell(8, 2, 'googlesetup.TestGoogleSearchTextField')
+data.setCell(8, 3, 5392);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test_checkForExistenceOfInputsInTextField_valid')
+data.setCell(9, 2, 'googlesetup.TestGoogleSearchTextField')
+data.setCell(9, 3, 5340);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkForPageExistence')
+data.setCell(10, 2, 'googlesetup.TestGoogleHomePageOpeningChrome')
+data.setCell(10, 3, 3751);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test_LookForLuckSearchButton')
+data.setCell(11, 2, 'googlesetup.TestGoogleSearchButton')
+data.setCell(11, 3, 2696);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'test_SearchButtonWithText')
+data.setCell(12, 2, 'googlesetup.TestGoogleSearchButton')
+data.setCell(12, 3, 1451);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test_SearchButtonWithTextAndRedirect')
+data.setCell(13, 2, 'googlesetup.TestGoogleSearchButton')
+data.setCell(13, 3, 1356);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test_checkForGoogleLogo_Existence')
+data.setCell(14, 2, 'googlesetup.TestGoogleSearchLogo')
+data.setCell(14, 3, 783);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test_SearchButtonWithTextJSONResponse')
+data.setCell(15, 2, 'googlesetup.TestGoogleSearchButton')
+data.setCell(15, 3, 694);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'test_SearchButtonWithNoText')
+data.setCell(16, 2, 'googlesetup.TestGoogleSearchButton')
+data.setCell(16, 3, 570);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'test_checkForLogoAlignment')
+data.setCell(17, 2, 'googlesetup.TestGoogleSearchLogo')
+data.setCell(17, 3, 566);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'test_checkForLogoCSSProperties')
+data.setCell(18, 2, 'googlesetup.TestGoogleSearchLogo')
+data.setCell(18, 3, 433);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'test_LookForSearchButton')
+data.setCell(19, 2, 'googlesetup.TestGoogleSearchButton')
+data.setCell(19, 3, 319);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'test_SearchButtonWithEmptyTextFailTest')
+data.setCell(20, 2, 'googlesetup.TestGoogleSearchButton')
+data.setCell(20, 3, 110);
+window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_Suite">
+              </div> <!-- times-div-Default_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleHomePageOpeningChrome</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleSearchButton</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetup</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleSearchLogo</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetup</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleSearchTextField</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetup</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.googleTextFieldSearchNegativeSteps_BDD</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetup</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.googleTextFieldSearchSteps_BDD</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetup</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.googleTextFieldSteps_BDD</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSetup</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleHomePageOpeningChrome</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkForPageExistence</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleSearchButton</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_LookForLuckSearchButton</span>
+                <span class="method-start">3793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_LookForSearchButton</span>
+                <span class="method-start">6489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_SearchButtonWithEmptyTextFailTest</span>
+                <span class="method-start">6808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_SearchButtonWithNoText</span>
+                <span class="method-start">6918 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_SearchButtonWithNumbers</span>
+                <span class="method-start">7488 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_SearchButtonWithSpecialChars</span>
+                <span class="method-start">17663 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_SearchButtonWithText</span>
+                <span class="method-start">31427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_SearchButtonWithTextAndRedirect</span>
+                <span class="method-start">32878 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_SearchButtonWithTextJSONResponse</span>
+                <span class="method-start">34234 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleSearchLogo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_checkForGoogleLogo_Existence</span>
+                <span class="method-start">34928 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_checkForLogoAlignment</span>
+                <span class="method-start">35711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_checkForLogoCSSProperties</span>
+                <span class="method-start">36277 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleSearchTextField</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_checkForExistenceOfInputsInTextField_JSInjection</span>
+                <span class="method-start">36711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_checkForExistenceOfInputsInTextField_SQLInjection</span>
+                <span class="method-start">45922 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_checkForExistenceOfInputsInTextField_blankSpaces</span>
+                <span class="method-start">51568 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_checkForExistenceOfInputsInTextField_specialChars_ASCII</span>
+                <span class="method-start">57177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_checkForExistenceOfInputsInTextField_specialChars_UTF8</span>
+                <span class="method-start">62661 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_checkForExistenceOfInputsInTextField_specialChars_Unicode</span>
+                <span class="method-start">68072 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_checkForExistenceOfInputsInTextField_valid</span>
+                <span class="method-start">73516 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_checkForExistenceOfTextField</span>
+                <span class="method-start">78857 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleHomePageOpeningChrome</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">84249 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleSearchButton</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">84359 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleSearchLogo</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">84475 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.TestGoogleSearchTextField</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">84583 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.googleTextFieldSearchNegativeSteps_BDD</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">84693 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.googleTextFieldSearchSteps_BDD</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">84782 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">googlesetup.googleTextFieldSteps_BDD</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">84862 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+
+    </div>
+  </body>
+</html>

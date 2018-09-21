@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]">
+  <test name="truefitgoogle(failed)">
+    <classes>
+      <class name="googlesetupChrome.TestGoogleHomePageOpeningChrome">
+        <methods>
+          <include name="testSetup"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- googlesetupChrome.TestGoogleHomePageOpeningChrome -->
+      <class name="googlesetupChrome.googleTextFieldSearchSteps_BDD">
+        <methods>
+          <include name="testSetup"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- googlesetupChrome.googleTextFieldSearchSteps_BDD -->
+      <class name="googlesetupChrome.googleTextFieldSteps_BDD">
+        <methods>
+          <include name="testSetup"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- googlesetupChrome.googleTextFieldSteps_BDD -->
+      <class name="googlesetupChrome.TestGoogleSearchButton">
+        <methods>
+          <include name="testTearDown"/>
+          <include name="testSetup"/>
+        </methods>
+      </class> <!-- googlesetupChrome.TestGoogleSearchButton -->
+      <class name="googlesetupChrome.TestGoogleSearchTextField">
+        <methods>
+          <include name="testTearDown"/>
+          <include name="test_checkForExistenceOfTextField"/>
+          <include name="testSetup"/>
+        </methods>
+      </class> <!-- googlesetupChrome.TestGoogleSearchTextField -->
+      <class name="googlesetupChrome.TestGoogleSearchLogo">
+        <methods>
+          <include name="testTearDown"/>
+          <include name="testSetup"/>
+        </methods>
+      </class> <!-- googlesetupChrome.TestGoogleSearchLogo -->
+      <class name="googlesetupChrome.googleTextFieldSearchNegativeSteps_BDD">
+        <methods>
+          <include name="testTearDown"/>
+          <include name="testSetup"/>
+        </methods>
+      </class> <!-- googlesetupChrome.googleTextFieldSearchNegativeSteps_BDD -->
+    </classes>
+  </test> <!-- truefitgoogle(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
