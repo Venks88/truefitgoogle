@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
 
-public class googleTextFieldSteps_BDD extends Runner {
+public class googleTextFieldSteps_BDD {
 
     private StringPlaceHolderClass sphObject = new StringPlaceHolderClass();
     private CommonFactoryClass cfcObject = new CommonFactoryClass();
@@ -58,13 +58,4 @@ public class googleTextFieldSteps_BDD extends Runner {
         Assert.assertNotNull(textFieldSrc.getAttribute("value"));
         ocObject.driver.close();
     }
-
-    public Description getDescription() {
-        return null;
-    }
-
-    public void run(RunNotifier runNotifier) {
-
-    }
-
 }

@@ -172,7 +172,6 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
         }
         s.close();
         for(int i=0; i<=list.size()-1;i++) {
-            System.out.println("->  "+i);
             URL url = new URL(sphObject.searchUrl +list.get(i)+sphObject.searchUrlClientPsy);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
