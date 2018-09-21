@@ -2,7 +2,7 @@
 
     <listeners>
 
-        <listener class-name="googlesetup.TestGoogleSearchLogo"></listener>
+        <listener class-name="googlesetup.TestGoogleSearchLogo"/>
 
     </listeners>
 
@@ -10,8 +10,10 @@
 
         <classes>
 
-            <class name="googlesetup.TestGoogleSearchLogo" />
+            <class name="googlesetup.TestGoogleSearchTextField" />
             <class name="googlesetup.TestGoogleHomePageOpening" />
+            <class name="googlesetup.TestGoogleSearchLogo" />
+            <class name="googlesetup.TestGoogleSearchButton" />
 
         </classes>
 
