@@ -4,6 +4,8 @@ import commonfactory.CommonFactoryClass;
 import commonfactory.StringPlaceHolderClass;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -49,7 +51,11 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             Assert.assertTrue(textFieldSrc.isEnabled(), "Text field is not enabled and usable");
             textFieldSrc.click();
             textFieldSrc.sendKeys(inputKey);
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -64,7 +70,11 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             Assert.assertEquals(searchButton.getTagName(), "input");
             Assert.assertEquals(searchButton.getAttribute("defaultValue"), "Google Search");
             Assert.assertEquals(searchButton.getAttribute("type"), "submit");
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -79,7 +89,11 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             Assert.assertEquals(searchButton.getAttribute("type"), "submit");
             Assert.assertFalse(searchButton.isDisplayed(), "The search button is not displayed");
             Assert.assertTrue(searchButton.isEnabled(), "The search button is not enabled");
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -100,7 +114,11 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             Assert.assertEquals(textFieldSrc.getAttribute("title"), "Search");
             Assert.assertEquals(textFieldSrc.getAttribute("type"), "text");
             Assert.assertEquals(textFieldSrc.getTagName(), "input");
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -117,7 +135,11 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             Assert.assertTrue(searchButton.isEnabled(), "Empty string keeps the button in disabled state");
             Assert.assertFalse(luckySearchButton.isDisplayed(), "Empty string searches work, when they should not be yeilding a new page");
             Assert.assertTrue(luckySearchButton.isEnabled(), "Empty string keeps the button in disabled state");
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -145,7 +167,11 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
                 Assert.assertTrue(textFieldSrc.isDisplayed(), "Text field is available on the redirected page");
                 Assert.assertTrue(textFieldSrc.isEnabled(), "Text field is NOT enabled");
             }
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -171,7 +197,11 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
                 Assert.assertEquals(textFieldSrc.getAttribute("value"), inputArray.get(i));
                 Assert.assertEquals(textFieldSrc.getTagName(), "input");
             }
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -192,7 +222,13 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             ocObject.driver.navigate().back();
             WebElement imgSource = ocObject.driver.findElement(By.id("hplogo"));
             Assert.assertTrue(imgSource.isDisplayed(), "Google Logo is displayed");
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (IllegalArgumentException e){
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -221,7 +257,13 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
                     Assert.assertTrue(inputLine.contains(list.get(i)), "The JSON content is invalid " + list.get(i) + inputLine);
                 in.close();
             }
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (IllegalArgumentException e){
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -242,7 +284,13 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             while ((inputLine = in.readLine()) != null)
                 Assert.assertTrue(inputLine.contains("{\"bpc\":false,\"tlw\":false}"), "The expected false notations are missing for empty search requests");
             in.close();
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (IllegalArgumentException e){
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }

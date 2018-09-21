@@ -2,6 +2,8 @@ package googlesetup;
 
 import commonfactory.CommonFactoryClass;
 import commonfactory.StringPlaceHolderClass;
+import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -59,7 +61,11 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
             WebElement voiceMic = ocObject.driver.findElementByCssSelector("div.voice_search_button");
 
             Assert.assertTrue(voiceMic.isDisplayed(), "Mic image is displayed");
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -73,7 +79,11 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
             textFieldSrc.sendKeys("Hello");
             Assert.assertEquals(textFieldSrc.getAttribute("value"), "Hello");
             Assert.assertNotNull(textFieldSrc.getAttribute("value"));
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -87,7 +97,11 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
             textFieldSrc.sendKeys("      ");
             Assert.assertEquals(textFieldSrc.getAttribute("value"), "      ");
             Assert.assertNotNull(textFieldSrc.getAttribute("value"));
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -101,7 +115,11 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
             textFieldSrc.sendKeys("私tわたしワタシ");
             Assert.assertEquals(textFieldSrc.getAttribute("value"), "私tわたしワタシ");
             Assert.assertNotNull(textFieldSrc.getAttribute("value"));
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -116,7 +134,11 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
             textFieldSrc.sendKeys("&#32;&#33;&#34;&#35;");
             Assert.assertEquals(textFieldSrc.getAttribute("value"), "&#32;&#33;&#34;&#35;");
             Assert.assertNotNull(textFieldSrc.getAttribute("value"));
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -130,7 +152,11 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
             textFieldSrc.sendKeys("¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼");
             Assert.assertEquals(textFieldSrc.getAttribute("value"), "¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼");
             Assert.assertNotNull(textFieldSrc.getAttribute("value"));
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -144,7 +170,11 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
             textFieldSrc.sendKeys("SELECT * FROM Table name WHERE Table.size = 5");
             Assert.assertEquals(textFieldSrc.getAttribute("value"), "SELECT * FROM Table name WHERE Table.size = 5");
             Assert.assertNotNull(textFieldSrc.getAttribute("value"));
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -158,7 +188,11 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
             textFieldSrc.sendKeys("<button type=\"button onclick=\"document.getElementById('demo').innerHTML = Date()\">");
             Assert.assertEquals(textFieldSrc.getAttribute("value"), "<button type=\"button onclick=\"document.getElementById('demo').innerHTML = Date()\">");
             Assert.assertNotNull(textFieldSrc.getAttribute("value"));
-        }catch (Exception e){
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }

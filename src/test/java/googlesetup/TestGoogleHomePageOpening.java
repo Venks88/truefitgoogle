@@ -2,6 +2,8 @@ package googlesetup;
 
 import commonfactory.CommonFactoryClass;
 import commonfactory.StringPlaceHolderClass;
+import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -46,6 +48,12 @@ public class TestGoogleHomePageOpening extends TestListenerAdapter {
             Assert.assertEquals(responseCode.getResponseMessage(), "OK");
             Assert.assertEquals(responseCode.getContentType(), "text/html; charset=ISO-8859-1");
             Assert.assertEquals(responseCode.getPermission().getName(), "www.google.com:80");
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
+        } catch (IllegalArgumentException e){
+            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }

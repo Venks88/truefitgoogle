@@ -2,9 +2,7 @@ package googlesetup;
 
 import commonfactory.CommonFactoryClass;
 import commonfactory.StringPlaceHolderClass;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Point;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
@@ -48,6 +46,10 @@ public class TestGoogleSearchLogo extends TestListenerAdapter {
             Assert.assertTrue(tagType.equals("img"), "The returned web element is not an image");
             Assert.assertTrue(src.equals("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"),
                     "The returned image source is incorrect");
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -62,6 +64,10 @@ public class TestGoogleSearchLogo extends TestListenerAdapter {
             String alignment = imgSource.getCssValue("text-align");
             Assert.assertNotNull(location, "The location of the image is not null, it exists in an x and y axes");
             Assert.assertTrue(alignment.equals("-webkit-center"),"The image is not aligned centrally");
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -80,6 +86,10 @@ public class TestGoogleSearchLogo extends TestListenerAdapter {
                     "The image does not have proper background color");
             Assert.assertTrue(srcSet.equals("/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, " +
                     "/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x"), "The source of the image is wrong");
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementNotVisibleException e) {
+            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
