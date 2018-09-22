@@ -25,6 +25,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class TestGoogleSearchButton extends TestListenerAdapter{
 
@@ -112,9 +113,8 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             WebElement textFieldSrc = ocObject.driver.findElementByName(sphObject.googleTextFieldname);
             Assert.assertTrue(textFieldSrc.isDisplayed(), "Text field is available on the redirected page");
             Assert.assertTrue(textFieldSrc.isEnabled(), "Text field is NOT enabled");
-            Assert.assertEquals(textFieldSrc.getAttribute("value"), "Hello");
-            Assert.assertEquals(textFieldSrc.getAttribute("title"), "Search");
-            Assert.assertEquals(textFieldSrc.getAttribute("type"), "text");
+            Assert.assertEquals(textFieldSrc.getAttribute("value"), "Hellasaso");
+            Assert.assertEquals(textFieldSrc.getAttribute("title"), "Search");Assert.assertEquals(textFieldSrc.getAttribute("type"), "text");
             Assert.assertEquals(textFieldSrc.getTagName(), "input");
         } catch (NoSuchElementException e) {
             e.printStackTrace();
@@ -217,6 +217,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             Assert.assertTrue(textFieldSrc.isDisplayed(), "Text field is available on the redirected page");
             Assert.assertTrue(textFieldSrc.isEnabled(), "Text field is NOT enabled");
             ocObject.driver.navigate().back();
+            ocObject.driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
             Assert.assertTrue(textFieldSrc.isDisplayed(), "Google has not displayed the navigation tab after a search");
         } catch (NoSuchElementException e) {
             e.printStackTrace();
