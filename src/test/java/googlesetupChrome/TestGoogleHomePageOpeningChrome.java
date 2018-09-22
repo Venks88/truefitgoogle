@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 import org.testng.annotations.*;
+import org.testng.xml.dom.Tag;
 
 import java.net.HttpURLConnection;
 
@@ -40,6 +41,7 @@ public class TestGoogleHomePageOpeningChrome extends TestListenerAdapter {
     }
 
     @Test
+    @Tag(name = "TC0001")
     public void checkForPageExistence() {
         try {
             driver.navigate().to(sphObject.sourceUrl);

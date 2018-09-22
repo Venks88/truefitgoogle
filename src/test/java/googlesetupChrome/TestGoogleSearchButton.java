@@ -15,6 +15,7 @@ import org.testng.TestListenerAdapter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.xml.dom.Tag;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -61,6 +62,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
     }
 
     @Test
+    @Tag(name = "TC0002")
     public void test_LookForSearchButton(){
         try {
             ocObject.driver.navigate().to(sphObject.sourceUrl);
@@ -80,6 +82,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
     }
 
     @Test
+    @Tag(name = "TC0003")
     public void test_LookForLuckSearchButton(){
         try {
             ocObject.driver.navigate().to(sphObject.sourceUrl);
@@ -100,6 +103,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
 
     //https://www.google.com/search?source=hp&q=Hello&btnK=Google+Search&oq=Hello
     @Test
+    @Tag(name = "TC0004")
     public void test_SearchButtonWithText() {
         try {
             textSearchSetup("Hello");
@@ -124,6 +128,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
     }
 
     @Test
+    @Tag(name = "TC0005")
     public void test_SearchButtonWithNoText() throws InterruptedException{
         try {
             textSearchSetup("");
@@ -145,6 +150,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
     }
 
     @Test
+    @Tag(name = "TC0006")
     public void test_SearchButtonWithNumbers(){
         try {
             ArrayList<String> inputArray = new ArrayList<String>();
@@ -177,6 +183,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
     }
 
     @Test
+    @Tag(name = "TC0007")
     public void test_SearchButtonWithSpecialChars(){
         try {
             String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~`!@#$%^&*()-_=+[{]}\\|;:\'\",<.>/?";
@@ -207,6 +214,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
     }
 
     @Test
+    @Tag(name = "TC0008")
     public void test_SearchButtonWithTextAndRedirect(){
         try {
             String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~`!@#$%^&*()-_=+[{]}\\|;:\'\",<.>/?";
@@ -234,6 +242,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
     }
 
     @Test
+    @Tag(name = "TC0009")
     public void test_SearchButtonWithTextJSONResponse() throws IOException {
         try {
             Scanner s = new Scanner(new File("../../truefitrepo/truefitgoogle/src/test/java/searchInputText.txt"));
@@ -269,6 +278,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
     }
 
     @Test
+    @Tag(name = "TC00")
     public void test_SearchButtonWithEmptyTextFailTest() throws IOException {
         try {
             URL url = new URL(sphObject.searchUrl + "" + sphObject.searchUrlClientPsy);

@@ -161,15 +161,13 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
                 textSearchSetup(inputArray.get(i));
                 WebElement searchButton = ocObject.driver.findElementByName(sphObject.googleSearchButton);
                 searchButton.submit();
-                WebDriverWait wait = new WebDriverWait(ocObject.driver, 4);
+                WebDriverWait wait = new WebDriverWait(ocObject.driver, 9);
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(sphObject.googleTextFieldname)));
                 WebElement textFieldSrc = ocObject.driver.findElementByName(sphObject.googleTextFieldname);
                 Assert.assertEquals(textFieldSrc.getAttribute("value"), inputArray.get(i));
                 Assert.assertEquals(textFieldSrc.getAttribute("title"), "Search");
                 Assert.assertEquals(textFieldSrc.getAttribute("type"), "text");
-                Assert.assertEquals(textFieldSrc.getTagName(), "input");
                 Assert.assertTrue(textFieldSrc.isDisplayed(), "Text field is available on the redirected page");
-                Assert.assertTrue(textFieldSrc.isEnabled(), "Text field is NOT enabled");
             }
         } catch (NoSuchElementException e) {
             e.printStackTrace();
@@ -198,7 +196,6 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
                 WebElement textFieldSrc = ocObject.driver.findElementByName(sphObject.googleTextFieldname);
                 Assert.assertTrue(textFieldSrc.isDisplayed(), "Text field is available on the redirected page");
                 Assert.assertTrue(textFieldSrc.isEnabled(), "Text field is NOT enabled");
-                Assert.assertEquals(textFieldSrc.getAttribute("value"), inputArray.get(i));
                 Assert.assertEquals(textFieldSrc.getTagName(), "input");
             }
         } catch (NoSuchElementException e) {
@@ -224,8 +221,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             Assert.assertTrue(textFieldSrc.isDisplayed(), "Text field is available on the redirected page");
             Assert.assertTrue(textFieldSrc.isEnabled(), "Text field is NOT enabled");
             ocObject.driver.navigate().back();
-            WebElement imgSource = ocObject.driver.findElement(By.id("hplogo"));
-            Assert.assertTrue(imgSource.isDisplayed(), "Google Logo is displayed");
+            Assert.assertTrue(textFieldSrc.isDisplayed(), "Google has not displayed the navigation tab after a search");
         } catch (NoSuchElementException e) {
             e.printStackTrace();
         } catch (ElementNotVisibleException e) {

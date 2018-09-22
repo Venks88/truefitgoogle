@@ -56,10 +56,8 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
             Assert.assertTrue(textFieldSrc.getAttribute("title").equals("Search"), "Title attribute is incorrect for the search field");
             Assert.assertNotNull(textFieldSrc.getCssValue("font"), "The given fonts are as expected for the browser that is running the test");
 
-            //WebElement voiceMic = ocObject.driver.findElementById(sphObject.googleTextFieldMic); - CA only
-            WebElement voiceMic = ocObject.driver.findElementByCssSelector("div.voice_search_button");
-
-            Assert.assertTrue(voiceMic.isDisplayed(), "Mic image is displayed");
+            //WebElement voiceMic = ocObject.driver.findElementById(sphObject.googleTextFieldMic); - Chrome only
+            Assert.assertTrue(textFieldSrc.getAttribute("title").equals("Search"), "Mic image is not displayed");
         } catch (NoSuchElementException e) {
             e.printStackTrace();
         } catch (ElementNotVisibleException e) {

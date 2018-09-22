@@ -2,158 +2,158 @@
 <testng-results skipped="0" failed="0" total="21" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="84948" started-at="2018-09-21T17:30:28Z" finished-at="2018-09-21T17:31:53Z">
+  <suite name="Default Suite" duration-ms="34001" started-at="2018-09-22T00:45:43Z" finished-at="2018-09-22T00:46:17Z">
     <groups>
     </groups>
-    <test name="truefitgoogle" duration-ms="84948" started-at="2018-09-21T17:30:28Z" finished-at="2018-09-21T17:31:53Z">
-      <class name="googlesetup.TestGoogleHomePageOpeningChrome">
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:[TestGoogleHomePageOpening passed=0 failed=0 skipped=0]]" name="testSetup" is-config="true" duration-ms="14" started-at="2018-09-21T13:30:28Z" finished-at="2018-09-21T13:30:28Z">
+    <test name="truefitgoogle" duration-ms="34001" started-at="2018-09-22T00:45:43Z" finished-at="2018-09-22T00:46:17Z">
+      <class name="googlesetupFireFox.TestGoogleHomePageOpeningFirefox">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:[TestGoogleHomePageOpeningFirefox passed=0 failed=0 skipped=0]]" name="testSetup" is-config="true" duration-ms="31" started-at="2018-09-21T20:45:43Z" finished-at="2018-09-21T20:45:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="testSetup" is-config="true" duration-ms="1" started-at="2018-09-21T13:30:28Z" finished-at="2018-09-21T13:30:28Z">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="testSetup" is-config="true" duration-ms="2" started-at="2018-09-21T20:45:43Z" finished-at="2018-09-21T20:45:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="testSetup" is-config="true" duration-ms="1" started-at="2018-09-21T13:30:28Z" finished-at="2018-09-21T13:30:28Z">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:[TestGoogleSearchLogo passed=0 failed=0 skipped=0]]" name="testSetup" is-config="true" duration-ms="1" started-at="2018-09-21T20:45:43Z" finished-at="2018-09-21T20:45:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:[TestGoogleSearchLogo passed=0 failed=0 skipped=0]]" name="testSetup" is-config="true" duration-ms="0" started-at="2018-09-21T13:30:28Z" finished-at="2018-09-21T13:30:28Z">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="testSetup" is-config="true" duration-ms="1" started-at="2018-09-21T20:45:43Z" finished-at="2018-09-21T20:45:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:googlesetup.googleTextFieldSearchNegativeSteps_BDD@4e268090]" name="testSetup" is-config="true" duration-ms="0" started-at="2018-09-21T13:30:28Z" finished-at="2018-09-21T13:30:28Z">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:googlesetupFireFox.googleTextFieldSearchNegativeSteps_BDD@61d6015a]" name="testSetup" is-config="true" duration-ms="1" started-at="2018-09-21T20:45:43Z" finished-at="2018-09-21T20:45:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:googlesetup.googleTextFieldSearchSteps_BDD@5939a379]" name="testSetup" is-config="true" duration-ms="5" started-at="2018-09-21T13:30:28Z" finished-at="2018-09-21T13:30:28Z">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:googlesetupFireFox.googleTextFieldSearchSteps_BDD@4ef37659]" name="testSetup" is-config="true" duration-ms="2" started-at="2018-09-21T20:45:43Z" finished-at="2018-09-21T20:45:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:googlesetup.googleTextFieldSteps_BDD@37858383]" name="testSetup" is-config="true" duration-ms="1" started-at="2018-09-21T13:30:28Z" finished-at="2018-09-21T13:30:28Z">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:googlesetupFireFox.googleTextFieldSteps_BDD@2e1d27ba]" name="testSetup" is-config="true" duration-ms="5" started-at="2018-09-21T20:45:43Z" finished-at="2018-09-21T20:45:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="checkForPageExistence()[pri:0, instance:[TestGoogleHomePageOpening passed=0 failed=0 skipped=0]]" name="checkForPageExistence" duration-ms="3751" started-at="2018-09-21T13:30:28Z" finished-at="2018-09-21T13:30:32Z">
+        <test-method status="PASS" signature="checkForPageExistence()[pri:0, instance:[TestGoogleHomePageOpeningFirefox passed=0 failed=0 skipped=0]]" name="checkForPageExistence" duration-ms="1680" started-at="2018-09-21T20:45:43Z" finished-at="2018-09-21T20:45:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForPageExistence -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:[TestGoogleHomePageOpening passed=0 failed=0 skipped=0]]" name="testTearDown" is-config="true" duration-ms="109" started-at="2018-09-21T13:31:52Z" finished-at="2018-09-21T13:31:52Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:[TestGoogleHomePageOpeningFirefox passed=0 failed=0 skipped=0]]" name="testTearDown" is-config="true" duration-ms="538" started-at="2018-09-21T20:46:13Z" finished-at="2018-09-21T20:46:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="testTearDown" is-config="true" duration-ms="116" started-at="2018-09-21T13:31:52Z" finished-at="2018-09-21T13:31:53Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="testTearDown" is-config="true" duration-ms="627" started-at="2018-09-21T20:46:13Z" finished-at="2018-09-21T20:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:[TestGoogleSearchLogo passed=0 failed=0 skipped=0]]" name="testTearDown" is-config="true" duration-ms="108" started-at="2018-09-21T13:31:53Z" finished-at="2018-09-21T13:31:53Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:[TestGoogleSearchLogo passed=0 failed=0 skipped=0]]" name="testTearDown" is-config="true" duration-ms="577" started-at="2018-09-21T20:46:14Z" finished-at="2018-09-21T20:46:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="testTearDown" is-config="true" duration-ms="110" started-at="2018-09-21T13:31:53Z" finished-at="2018-09-21T13:31:53Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="testTearDown" is-config="true" duration-ms="503" started-at="2018-09-21T20:46:15Z" finished-at="2018-09-21T20:46:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:googlesetup.googleTextFieldSearchNegativeSteps_BDD@4e268090]" name="testTearDown" is-config="true" duration-ms="88" started-at="2018-09-21T13:31:53Z" finished-at="2018-09-21T13:31:53Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:googlesetupFireFox.googleTextFieldSearchNegativeSteps_BDD@61d6015a]" name="testTearDown" is-config="true" duration-ms="484" started-at="2018-09-21T20:46:15Z" finished-at="2018-09-21T20:46:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:googlesetup.googleTextFieldSearchSteps_BDD@5939a379]" name="testTearDown" is-config="true" duration-ms="80" started-at="2018-09-21T13:31:53Z" finished-at="2018-09-21T13:31:53Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:googlesetupFireFox.googleTextFieldSearchSteps_BDD@4ef37659]" name="testTearDown" is-config="true" duration-ms="547" started-at="2018-09-21T20:46:16Z" finished-at="2018-09-21T20:46:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="testTearDown()[pri:0, instance:googlesetup.googleTextFieldSteps_BDD@37858383]" name="testTearDown" is-config="true" duration-ms="85" started-at="2018-09-21T13:31:53Z" finished-at="2018-09-21T13:31:53Z">
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:googlesetupFireFox.googleTextFieldSteps_BDD@2e1d27ba]" name="testTearDown" is-config="true" duration-ms="546" started-at="2018-09-21T20:46:16Z" finished-at="2018-09-21T20:46:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTearDown -->
-      </class> <!-- googlesetupChrome.TestGoogleHomePageOpeningChrome -->
-      <class name="googlesetup.TestGoogleSearchButton">
-        <test-method status="PASS" signature="test_LookForLuckSearchButton()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_LookForLuckSearchButton" duration-ms="2696" started-at="2018-09-21T13:30:32Z" finished-at="2018-09-21T13:30:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_LookForLuckSearchButton -->
-        <test-method status="PASS" signature="test_LookForSearchButton()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_LookForSearchButton" duration-ms="319" started-at="2018-09-21T13:30:35Z" finished-at="2018-09-21T13:30:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_LookForSearchButton -->
-        <test-method status="PASS" signature="test_SearchButtonWithEmptyTextFailTest()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithEmptyTextFailTest" duration-ms="110" started-at="2018-09-21T13:30:35Z" finished-at="2018-09-21T13:30:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_SearchButtonWithEmptyTextFailTest -->
-        <test-method status="PASS" signature="test_SearchButtonWithNoText()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithNoText" duration-ms="570" started-at="2018-09-21T13:30:35Z" finished-at="2018-09-21T13:30:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_SearchButtonWithNoText -->
-        <test-method status="PASS" signature="test_SearchButtonWithNumbers()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithNumbers" duration-ms="10174" started-at="2018-09-21T13:30:36Z" finished-at="2018-09-21T13:30:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_SearchButtonWithNumbers -->
-        <test-method status="PASS" signature="test_SearchButtonWithSpecialChars()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithSpecialChars" duration-ms="13764" started-at="2018-09-21T13:30:46Z" finished-at="2018-09-21T13:30:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_SearchButtonWithSpecialChars -->
-        <test-method status="PASS" signature="test_SearchButtonWithText()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithText" duration-ms="1451" started-at="2018-09-21T13:30:59Z" finished-at="2018-09-21T13:31:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_SearchButtonWithText -->
-        <test-method status="PASS" signature="test_SearchButtonWithTextAndRedirect()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithTextAndRedirect" duration-ms="1356" started-at="2018-09-21T13:31:01Z" finished-at="2018-09-21T13:31:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_SearchButtonWithTextAndRedirect -->
-        <test-method status="PASS" signature="test_SearchButtonWithTextJSONResponse()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithTextJSONResponse" duration-ms="694" started-at="2018-09-21T13:31:02Z" finished-at="2018-09-21T13:31:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_SearchButtonWithTextJSONResponse -->
-      </class> <!-- googlesetupChrome.TestGoogleSearchButton -->
-      <class name="googlesetup.TestGoogleSearchTextField">
-        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_JSInjection()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_JSInjection" duration-ms="9211" started-at="2018-09-21T13:31:05Z" finished-at="2018-09-21T13:31:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_checkForExistenceOfInputsInTextField_JSInjection -->
-        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_SQLInjection()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_SQLInjection" duration-ms="5645" started-at="2018-09-21T13:31:14Z" finished-at="2018-09-21T13:31:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_checkForExistenceOfInputsInTextField_SQLInjection -->
-        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_blankSpaces()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_blankSpaces" duration-ms="5608" started-at="2018-09-21T13:31:20Z" finished-at="2018-09-21T13:31:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_checkForExistenceOfInputsInTextField_blankSpaces -->
-        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_specialChars_ASCII()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_specialChars_ASCII" duration-ms="5483" started-at="2018-09-21T13:31:25Z" finished-at="2018-09-21T13:31:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_checkForExistenceOfInputsInTextField_specialChars_ASCII -->
-        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_specialChars_UTF8()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_specialChars_UTF8" duration-ms="5411" started-at="2018-09-21T13:31:31Z" finished-at="2018-09-21T13:31:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_checkForExistenceOfInputsInTextField_specialChars_UTF8 -->
-        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_specialChars_Unicode()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_specialChars_Unicode" duration-ms="5444" started-at="2018-09-21T13:31:36Z" finished-at="2018-09-21T13:31:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_checkForExistenceOfInputsInTextField_specialChars_Unicode -->
-        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_valid()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_valid" duration-ms="5340" started-at="2018-09-21T13:31:42Z" finished-at="2018-09-21T13:31:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_checkForExistenceOfInputsInTextField_valid -->
-        <test-method status="PASS" signature="test_checkForExistenceOfTextField()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfTextField" duration-ms="5392" started-at="2018-09-21T13:31:47Z" finished-at="2018-09-21T13:31:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_checkForExistenceOfTextField -->
-      </class> <!-- googlesetupChrome.TestGoogleSearchTextField -->
-      <class name="googlesetup.TestGoogleSearchLogo">
-        <test-method status="PASS" signature="test_checkForGoogleLogo_Existence()[pri:0, instance:[TestGoogleSearchLogo passed=0 failed=0 skipped=0]]" name="test_checkForGoogleLogo_Existence" duration-ms="783" started-at="2018-09-21T13:31:03Z" finished-at="2018-09-21T13:31:04Z">
+      </class> <!-- googlesetupFireFox.TestGoogleHomePageOpeningFirefox -->
+      <class name="googlesetupFireFox.TestGoogleSearchLogo">
+        <test-method status="PASS" signature="test_checkForGoogleLogo_Existence()[pri:0, instance:[TestGoogleSearchLogo passed=0 failed=0 skipped=0]]" name="test_checkForGoogleLogo_Existence" duration-ms="1436" started-at="2018-09-21T20:46:03Z" finished-at="2018-09-21T20:46:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_checkForGoogleLogo_Existence -->
-        <test-method status="PASS" signature="test_checkForLogoAlignment()[pri:0, instance:[TestGoogleSearchLogo passed=0 failed=0 skipped=0]]" name="test_checkForLogoAlignment" duration-ms="566" started-at="2018-09-21T13:31:04Z" finished-at="2018-09-21T13:31:04Z">
+        <test-method status="PASS" signature="test_checkForLogoAlignment()[pri:0, instance:[TestGoogleSearchLogo passed=0 failed=0 skipped=0]]" name="test_checkForLogoAlignment" duration-ms="655" started-at="2018-09-21T20:46:05Z" finished-at="2018-09-21T20:46:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_checkForLogoAlignment -->
-        <test-method status="PASS" signature="test_checkForLogoCSSProperties()[pri:0, instance:[TestGoogleSearchLogo passed=0 failed=0 skipped=0]]" name="test_checkForLogoCSSProperties" duration-ms="433" started-at="2018-09-21T13:31:04Z" finished-at="2018-09-21T13:31:05Z">
+        <test-method status="PASS" signature="test_checkForLogoCSSProperties()[pri:0, instance:[TestGoogleSearchLogo passed=0 failed=0 skipped=0]]" name="test_checkForLogoCSSProperties" duration-ms="597" started-at="2018-09-21T20:46:06Z" finished-at="2018-09-21T20:46:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_checkForLogoCSSProperties -->
-      </class> <!-- googlesetupChrome.TestGoogleSearchLogo -->
+      </class> <!-- googlesetupFireFox.TestGoogleSearchLogo -->
+      <class name="googlesetupFireFox.TestGoogleSearchTextField">
+        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_JSInjection()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_JSInjection" duration-ms="1887" started-at="2018-09-21T20:46:06Z" finished-at="2018-09-21T20:46:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_checkForExistenceOfInputsInTextField_JSInjection -->
+        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_SQLInjection()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_SQLInjection" duration-ms="832" started-at="2018-09-21T20:46:08Z" finished-at="2018-09-21T20:46:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_checkForExistenceOfInputsInTextField_SQLInjection -->
+        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_blankSpaces()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_blankSpaces" duration-ms="657" started-at="2018-09-21T20:46:09Z" finished-at="2018-09-21T20:46:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_checkForExistenceOfInputsInTextField_blankSpaces -->
+        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_specialChars_ASCII()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_specialChars_ASCII" duration-ms="704" started-at="2018-09-21T20:46:10Z" finished-at="2018-09-21T20:46:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_checkForExistenceOfInputsInTextField_specialChars_ASCII -->
+        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_specialChars_UTF8()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_specialChars_UTF8" duration-ms="593" started-at="2018-09-21T20:46:10Z" finished-at="2018-09-21T20:46:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_checkForExistenceOfInputsInTextField_specialChars_UTF8 -->
+        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_specialChars_Unicode()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_specialChars_Unicode" duration-ms="792" started-at="2018-09-21T20:46:11Z" finished-at="2018-09-21T20:46:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_checkForExistenceOfInputsInTextField_specialChars_Unicode -->
+        <test-method status="PASS" signature="test_checkForExistenceOfInputsInTextField_valid()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfInputsInTextField_valid" duration-ms="639" started-at="2018-09-21T20:46:12Z" finished-at="2018-09-21T20:46:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_checkForExistenceOfInputsInTextField_valid -->
+        <test-method status="PASS" signature="test_checkForExistenceOfTextField()[pri:0, instance:[TestGoogleSearchTextField passed=0 failed=0 skipped=0]]" name="test_checkForExistenceOfTextField" duration-ms="698" started-at="2018-09-21T20:46:12Z" finished-at="2018-09-21T20:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_checkForExistenceOfTextField -->
+      </class> <!-- googlesetupFireFox.TestGoogleSearchTextField -->
+      <class name="googlesetupFireFox.TestGoogleSearchButton">
+        <test-method status="PASS" signature="test_LookForLuckSearchButton()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_LookForLuckSearchButton" duration-ms="1411" started-at="2018-09-21T20:45:45Z" finished-at="2018-09-21T20:45:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_LookForLuckSearchButton -->
+        <test-method status="PASS" signature="test_LookForSearchButton()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_LookForSearchButton" duration-ms="463" started-at="2018-09-21T20:45:46Z" finished-at="2018-09-21T20:45:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_LookForSearchButton -->
+        <test-method status="PASS" signature="test_SearchButtonWithEmptyTextFailTest()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithEmptyTextFailTest" duration-ms="109" started-at="2018-09-21T20:45:46Z" finished-at="2018-09-21T20:45:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SearchButtonWithEmptyTextFailTest -->
+        <test-method status="PASS" signature="test_SearchButtonWithNoText()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithNoText" duration-ms="748" started-at="2018-09-21T20:45:47Z" finished-at="2018-09-21T20:45:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SearchButtonWithNoText -->
+        <test-method status="PASS" signature="test_SearchButtonWithNumbers()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithNumbers" duration-ms="4791" started-at="2018-09-21T20:45:47Z" finished-at="2018-09-21T20:45:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SearchButtonWithNumbers -->
+        <test-method status="PASS" signature="test_SearchButtonWithSpecialChars()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithSpecialChars" duration-ms="7795" started-at="2018-09-21T20:45:52Z" finished-at="2018-09-21T20:46:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SearchButtonWithSpecialChars -->
+        <test-method status="PASS" signature="test_SearchButtonWithText()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithText" duration-ms="755" started-at="2018-09-21T20:46:00Z" finished-at="2018-09-21T20:46:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SearchButtonWithText -->
+        <test-method status="PASS" signature="test_SearchButtonWithTextAndRedirect()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithTextAndRedirect" duration-ms="2179" started-at="2018-09-21T20:46:01Z" finished-at="2018-09-21T20:46:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SearchButtonWithTextAndRedirect -->
+        <test-method status="PASS" signature="test_SearchButtonWithTextJSONResponse()[pri:0, instance:[TestGoogleSearchButton passed=0 failed=0 skipped=0]]" name="test_SearchButtonWithTextJSONResponse" duration-ms="675" started-at="2018-09-21T20:46:03Z" finished-at="2018-09-21T20:46:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SearchButtonWithTextJSONResponse -->
+      </class> <!-- googlesetupFireFox.TestGoogleSearchButton -->
     </test> <!-- truefitgoogle -->
   </suite> <!-- Default Suite -->
 </testng-results>

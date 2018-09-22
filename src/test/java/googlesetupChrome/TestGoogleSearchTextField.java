@@ -11,6 +11,7 @@ import org.testng.TestListenerAdapter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.xml.dom.Tag;
 
 import java.io.IOException;
 
@@ -38,6 +39,7 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
     }
 
     @Test
+    @Tag(name = "TC0014")
     public void test_checkForExistenceOfTextField() throws InterruptedException {
         try {
             ocObject.driver.navigate().to(sphObject.sourceUrl);
@@ -70,6 +72,7 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
     }
 
     @Test
+    @Tag(name = "TC0015")
     public void test_checkForExistenceOfInputsInTextField_valid(){
         try {
             ocObject.driver.navigate().to(sphObject.sourceUrl);
@@ -88,6 +91,7 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
     }
 
     @Test
+    @Tag(name = "TC0016")
     public void test_checkForExistenceOfInputsInTextField_blankSpaces(){
         try {
             ocObject.driver.navigate().to(sphObject.sourceUrl);
@@ -106,6 +110,7 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
     }
 
     @Test
+    @Tag(name = "TC0017")
     public void test_checkForExistenceOfInputsInTextField_specialChars_UTF8(){
         try {
             ocObject.driver.navigate().to(sphObject.sourceUrl);
@@ -125,6 +130,7 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
 
 
     @Test
+    @Tag(name = "TC0018")
     public void test_checkForExistenceOfInputsInTextField_specialChars_ASCII(){
         try {
             ocObject.driver.navigate().to(sphObject.sourceUrl);
@@ -143,6 +149,7 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
     }
 
     @Test
+    @Tag(name = "TC0019")
     public void test_checkForExistenceOfInputsInTextField_specialChars_Unicode(){
         try {
             ocObject.driver.navigate().to(sphObject.sourceUrl);
@@ -161,6 +168,7 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
     }
 
     @Test
+    @Tag(name = "TC0020")
     public void test_checkForExistenceOfInputsInTextField_SQLInjection(){
         try {
             ocObject.driver.navigate().to(sphObject.sourceUrl);
@@ -179,6 +187,7 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
     }
 
     @Test
+    @Tag(name = "TC0021")
     public void test_checkForExistenceOfInputsInTextField_JSInjection(){
         try {
             ocObject.driver.navigate().to(sphObject.sourceUrl);
