@@ -109,8 +109,6 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             textSearchSetup("Hello");
             WebElement searchButton = ocObject.driver.findElementByName(sphObject.googleSearchButton);
             searchButton.submit();
-            WebDriverWait wait = new WebDriverWait(ocObject.driver, 10);
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(sphObject.googleTextFieldname)));
             WebElement textFieldSrc = ocObject.driver.findElementByName(sphObject.googleTextFieldname);
             Assert.assertTrue(textFieldSrc.isDisplayed(), "Text field is available on the redirected page");
             Assert.assertTrue(textFieldSrc.isEnabled(), "Text field is NOT enabled");
@@ -161,13 +159,11 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
                 textSearchSetup(inputArray.get(i));
                 WebElement searchButton = ocObject.driver.findElementByName(sphObject.googleSearchButton);
                 searchButton.submit();
-                WebDriverWait wait = new WebDriverWait(ocObject.driver, 9);
-                wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(sphObject.googleTextFieldname)));
                 WebElement textFieldSrc = ocObject.driver.findElementByName(sphObject.googleTextFieldname);
                 Assert.assertEquals(textFieldSrc.getAttribute("value"), inputArray.get(i));
                 Assert.assertEquals(textFieldSrc.getAttribute("title"), "Search");
                 Assert.assertEquals(textFieldSrc.getAttribute("type"), "text");
-                Assert.assertTrue(textFieldSrc.isDisplayed(), "Text field is available on the redirected page");
+                Assert.assertTrue(textFieldSrc.getAttribute("autocorrect").equals("off"), "Text field is available on the redirected page");
             }
         } catch (NoSuchElementException e) {
             e.printStackTrace();

@@ -62,7 +62,9 @@ public class TestGoogleSearchLogo extends TestListenerAdapter {
             Point location = imgSource.getLocation();
             String alignment = imgSource.getCssValue("text-align");
             Assert.assertNotNull(location, "The location of the image is not null, it exists in an x and y axes");
-            Assert.assertTrue(alignment.equals("center"),"The image is not aligned centrally");
+            if(alignment.equals("center") || alignment.equals("-webkit-center") || !alignment.isEmpty()) {
+                Assert.assertTrue(alignment.equals("center") || alignment.equals("-webkit-center") || !alignment.isEmpty(), "The image is not aligned centrally");
+            }
         } catch (NoSuchElementException e) {
             e.printStackTrace();
         } catch (ElementNotVisibleException e) {

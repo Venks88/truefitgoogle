@@ -5,6 +5,8 @@ import commonfactory.StringPlaceHolderClass;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.MutableCapabilities;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;

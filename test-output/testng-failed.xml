@@ -3,49 +3,49 @@
 <suite name="Failed suite [Default Suite]">
   <test name="truefitgoogle(failed)">
     <classes>
-      <class name="googlesetupChrome.TestGoogleHomePageOpeningChrome">
+      <class name="googlesetupFireFox.googleTextFieldSearchSteps_BDD">
         <methods>
           <include name="testSetup"/>
           <include name="testTearDown"/>
         </methods>
-      </class> <!-- googlesetupChrome.TestGoogleHomePageOpeningChrome -->
-      <class name="googlesetupChrome.googleTextFieldSearchSteps_BDD">
+      </class> <!-- googlesetupFireFox.googleTextFieldSearchSteps_BDD -->
+      <class name="googlesetupFireFox.TestGoogleSearchLogo">
+        <methods>
+          <include name="testSetup"/>
+          <include name="testTearDown"/>
+          <include name="test_checkForLogoAlignment"/>
+        </methods>
+      </class> <!-- googlesetupFireFox.TestGoogleSearchLogo -->
+      <class name="googlesetupFireFox.googleTextFieldSteps_BDD">
         <methods>
           <include name="testSetup"/>
           <include name="testTearDown"/>
         </methods>
-      </class> <!-- googlesetupChrome.googleTextFieldSearchSteps_BDD -->
-      <class name="googlesetupChrome.googleTextFieldSteps_BDD">
-        <methods>
-          <include name="testSetup"/>
-          <include name="testTearDown"/>
-        </methods>
-      </class> <!-- googlesetupChrome.googleTextFieldSteps_BDD -->
-      <class name="googlesetupChrome.TestGoogleSearchButton">
+      </class> <!-- googlesetupFireFox.googleTextFieldSteps_BDD -->
+      <class name="googlesetupFireFox.googleTextFieldSearchNegativeSteps_BDD">
         <methods>
           <include name="testTearDown"/>
           <include name="testSetup"/>
         </methods>
-      </class> <!-- googlesetupChrome.TestGoogleSearchButton -->
-      <class name="googlesetupChrome.TestGoogleSearchTextField">
+      </class> <!-- googlesetupFireFox.googleTextFieldSearchNegativeSteps_BDD -->
+      <class name="googlesetupFireFox.TestGoogleSearchTextField">
         <methods>
-          <include name="testTearDown"/>
-          <include name="test_checkForExistenceOfTextField"/>
           <include name="testSetup"/>
+          <include name="testTearDown"/>
         </methods>
-      </class> <!-- googlesetupChrome.TestGoogleSearchTextField -->
-      <class name="googlesetupChrome.TestGoogleSearchLogo">
+      </class> <!-- googlesetupFireFox.TestGoogleSearchTextField -->
+      <class name="googlesetupFireFox.TestGoogleHomePageOpeningFirefox">
         <methods>
-          <include name="testTearDown"/>
           <include name="testSetup"/>
+          <include name="testTearDown"/>
         </methods>
-      </class> <!-- googlesetupChrome.TestGoogleSearchLogo -->
-      <class name="googlesetupChrome.googleTextFieldSearchNegativeSteps_BDD">
+      </class> <!-- googlesetupFireFox.TestGoogleHomePageOpeningFirefox -->
+      <class name="googlesetupFireFox.TestGoogleSearchButton">
         <methods>
-          <include name="testTearDown"/>
           <include name="testSetup"/>
+          <include name="testTearDown"/>
         </methods>
-      </class> <!-- googlesetupChrome.googleTextFieldSearchNegativeSteps_BDD -->
+      </class> <!-- googlesetupFireFox.TestGoogleSearchButton -->
     </classes>
   </test> <!-- truefitgoogle(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

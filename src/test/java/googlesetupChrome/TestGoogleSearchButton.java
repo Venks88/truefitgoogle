@@ -278,7 +278,7 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
     }
 
     @Test
-    @Tag(name = "TC00")
+    @Tag(name = "TC0010")
     public void test_SearchButtonWithEmptyTextFailTest() throws IOException {
         try {
             URL url = new URL(sphObject.searchUrl + "" + sphObject.searchUrlClientPsy);
