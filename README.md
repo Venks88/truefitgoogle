@@ -3,6 +3,9 @@ True fit google test automation suite
 
 Requirements:
 -------------
+Main read me doc:
+-----------------
+https://docs.google.com/document/d/1lztO2KR-tocgfxmlhKJbZlGm60lTKDj1x73fOAETq8M/edit
 
 Download the following items:
 ==============================
