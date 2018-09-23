@@ -36,7 +36,7 @@ public class TestURLusingGoogleSearch extends TestListenerAdapter{
         cfcObject.screenShotMechanismOnFailureChrome(result);
     }
 
-    String[] urlListArray = new String[]{ "www.google.com","www.gmail.com","www.com","www."+"+s+"+".com" };
+    String[] urlListArray = new String[]{ "www.google.com","www.gmail.com","www.com","www."+"+s+"+".com", "s.com","www.",".com" };
 
     @Test
     public void test_URLSearchingUsingGoogle(){

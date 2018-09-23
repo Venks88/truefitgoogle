@@ -44,7 +44,29 @@ public class TestGoogleSearchLogo extends TestListenerAdapter {
             WebElement imgSource = ocObject.driver.findElement(By.id("hplogo"));
             String tagType = ocObject.driver.findElementById("hplogo").getTagName();
             Assert.assertTrue(imgSource.isDisplayed(), "Google Logo is displayed");
-            Assert.assertTrue(tagType.equals("div"), "The returned web element is not an image");
+            if(tagType.equals("div")) {
+                Assert.assertTrue(tagType.equals("div"), "The returned web element is not an image");
+                Assert.assertEquals(imgSource.getAttribute("baseURI"), sphObject.sourceUrl);
+                Assert.assertEquals(imgSource.getAttribute("namespaceURI"), "http://www.w3.org/1999/xhtml");
+            }if(tagType.equals("img")){
+                Assert.assertTrue(imgSource.getAttribute("alt").equals("Google"));
+                Assert.assertNotNull(imgSource.getAttribute("src"),"The source is not null");
+                Assert.assertNotNull(imgSource.getAttribute("srcset"),"The source set is not null");
+                Assert.assertNotNull(imgSource.getAttribute("style"),"The source set is not null");
+            }
+            String src = "";
+            // extra step to handle doodles
+            try{
+                src = imgSource.getAttribute("localName");
+                if(!src.isEmpty()) {
+                    if (src.equals("div")) {
+                        Assert.assertTrue(src.equals("div"),
+                                "The returned image source is incorrect");
+                    }
+                }
+            } catch (NullPointerException e){
+                e.printStackTrace();
+            }
         } catch (NoSuchElementException e) {
             e.printStackTrace();
         } catch (ElementNotVisibleException e) {
