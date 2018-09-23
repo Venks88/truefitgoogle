@@ -33,11 +33,6 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
         ocObject.testTearDown();
     }
 
-    @Override
-    public void onTestFailure(ITestResult result) {
-        cfcObject.screenShotMechanismOnFailureChrome(result);
-    }
-
     @Test
     @Tag(name = "TC0014")
     public void test_checkForExistenceOfTextField() throws InterruptedException {

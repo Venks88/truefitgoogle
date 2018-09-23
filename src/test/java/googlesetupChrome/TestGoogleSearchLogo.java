@@ -29,11 +29,6 @@ public class TestGoogleSearchLogo extends TestListenerAdapter {
         ocObject.testTearDown();
     }
 
-    @Override
-    public void onTestFailure(ITestResult result) {
-        cfcObject.screenShotMechanismOnFailureChrome(result);
-    }
-
 
     //Notes: replace the hard coded values hplogo, xpath, attribute
     @Test

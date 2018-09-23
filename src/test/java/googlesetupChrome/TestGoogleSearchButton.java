@@ -39,11 +39,6 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
         ocObject.testTearDown();
     }
 
-    @Override
-    public void onTestFailure(ITestResult result) {
-        cfcObject.screenShotMechanismOnFailureChrome(result);
-    }
-
     public void textSearchSetup(String inputKey){
         try {
             ocObject.driver.navigate().to(sphObject.sourceUrl);

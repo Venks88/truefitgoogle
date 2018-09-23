@@ -32,11 +32,6 @@ public class TestEmptyTextBoxSearch extends TestListenerAdapter{
         ocObject.testTearDown();
     }
 
-    @Override
-    public void onTestFailure(ITestResult result) {
-        cfcObject.screenShotMechanismOnFailureChrome(result);
-    }
-
     @Test
     public void test_emptyTextBoxSearch_typing(){
         try {

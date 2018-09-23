@@ -3,8 +3,11 @@ package googlesetupChrome;
 import commonfactory.CommonFactoryClass;
 import commonfactory.StringPlaceHolderClass;
 import okhttp3.*;
+import org.codehaus.plexus.util.FileUtils;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -37,10 +40,25 @@ public class TestGoogleHomePageOpeningChrome extends TestListenerAdapter {
         driver.close();
     }
 
-    @Override
-    public void onTestFailure(ITestResult result) {
-        cfcObject.screenShotMechanismOnFailureChrome(result);
+    @AfterMethod //AfterMethod annotation - This method executes after every test execution
+    public void screenShot(ITestResult result){
+        //using ITestResult.FAILURE is equals to result.getStatus then it enter into if condition
+        if(ITestResult.FAILURE==result.getStatus()){
+            try{
+                // To create reference of TakesScreenshot
+                TakesScreenshot screenshot=(TakesScreenshot)driver;
+                // Call method to capture screenshot
+                File src=screenshot.getScreenshotAs(OutputType.FILE);
+                // Copy files to specific location
+                // result.getName() will return name of test case so that screenshot name will be same as test case name
+                FileUtils.copyFile(src, new File("./screenshots/"+result.getName()+".png"));
+                System.out.println("Successfully captured a screenshot");
+            }catch (Exception e){
+                System.out.println("Exception while taking screenshot "+e.getMessage());
+            }
+        }
     }
+
 
     @Test
     @Tag(name = "TC0001")

@@ -3,6 +3,7 @@ package googlesetupFireFox;
 import commonfactory.CommonFactoryClass;
 import commonfactory.StringPlaceHolderClass;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
@@ -41,11 +42,6 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
     @AfterTest
     public void testTearDown() throws IOException {
         ocObject.testTearDown();
-    }
-
-    @Override
-    public void onTestFailure(ITestResult result) {
-        cfcObject.screenShotMechanismOnFailureFirefox(result);
     }
 
     public void textSearchSetup(String inputKey){
@@ -163,7 +159,11 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
                 Assert.assertEquals(textFieldSrc.getAttribute("value"), inputArray.get(i));
                 Assert.assertEquals(textFieldSrc.getAttribute("title"), "Search");
                 Assert.assertEquals(textFieldSrc.getAttribute("type"), "text");
-                Assert.assertTrue(textFieldSrc.getAttribute("autocorrect").equals("off"), "Text field is available on the redirected page");
+                if(!textFieldSrc.getAttribute("autocorrect").isEmpty()) {
+                    Assert.assertTrue(textFieldSrc.getAttribute("autocorrect").equals("off"), "Text field is available on the redirected page");
+                }else{
+                    Assert.assertFalse(textFieldSrc.getAttribute("autocorrect").equals("off"));
+                }
             }
         } catch (NoSuchElementException e) {
             e.printStackTrace();
@@ -218,7 +218,12 @@ public class TestGoogleSearchButton extends TestListenerAdapter{
             Assert.assertTrue(textFieldSrc.isEnabled(), "Text field is NOT enabled");
             ocObject.driver.navigate().back();
             ocObject.driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-            Assert.assertTrue(textFieldSrc.isDisplayed(), "Google has not displayed the navigation tab after a search");
+            if(textFieldSrc.getAttribute("outerHTML").isEmpty()){
+                Assert.assertNull(textFieldSrc.getAttribute("outerHTML"),"The rendering of the page is incorrect");
+            }else {
+                Assert.assertTrue(textFieldSrc.getAttribute("outerHTML").contains("title=\"Search"), "Google has not displayed the navigation tab after a search");
+                Assert.assertTrue(textFieldSrc.getAttribute("outerHTML").contains("type=\"text"), "Google has not displayed the navigation tab after a search");
+            }
         } catch (NoSuchElementException e) {
             e.printStackTrace();
         } catch (ElementNotVisibleException e) {

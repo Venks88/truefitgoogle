@@ -32,11 +32,6 @@ public class TestGoogleSearchTextField extends TestListenerAdapter {
         ocObject.testTearDown();
     }
 
-    @Override
-    public void onTestFailure(ITestResult result) {
-        cfcObject.screenShotMechanismOnFailureFirefox(result);
-    }
-
     @Test
     public void test_checkForExistenceOfTextField() throws InterruptedException {
         try {

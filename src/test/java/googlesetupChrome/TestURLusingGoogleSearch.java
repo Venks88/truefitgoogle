@@ -28,11 +28,6 @@ public class TestURLusingGoogleSearch extends TestListenerAdapter{
         ocObject.testTearDown();
     }
 
-    @Override
-    public void onTestFailure(ITestResult result) {
-        cfcObject.screenShotMechanismOnFailureChrome(result);
-    }
-
     String[] urlListArray = new String[]{ "www.google.com","www.gmail.com","www.com","www."+"+s+"+".com", "s.com","www.",".com"};
 
     @Test

@@ -29,11 +29,6 @@ public class TestCopyPasteAndSearch extends TestListenerAdapter{
         ocObject.testTearDown();
     }
 
-    @Override
-    public void onTestFailure(ITestResult result) {
-        cfcObject.screenShotMechanismOnFailureChrome(result);
-    }
-
     @Test
     public void test_copyPasteAndSearch(){
         try {
