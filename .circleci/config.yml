@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node-jessie-browsers
+      - image: selenium/standalone-chrome:3.1.0
     steps:
       - checkout
       - run: mkdir test-reports
